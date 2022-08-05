@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(220, 238, 101);
+    font: 1em;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    width: 80%;
+    margin: 50px auto;
+}
+
+.contact-box{
+    background: white;
+    display: flex;
+}
+.contact-left{
+    flex-basis: 60%;
+    padding: 40px 60px;
+}
+.contact-right{
+    flex-basis: 40%;
+    padding: 40px;
+    background-color: blue;
+    color: White;
+}
+h1{
+    margin-bottom: 10px;
+}
+.container p{
+    margin-bottom: 40px;
+}
+.input-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-row .input-group{
+    flex-basis: 45%;
+}
+input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: 1px solid;
+    padding-bottom: 5px;
+}
+
+textarea{
+    width: 100%;
+    border: 1px solid white;
+    outline: 2px solid;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+label{
+    margin-bottom: 6px ;
+    display: block;
+    color: blue;
+}
+button{
+    background-color: blue;
+    width: 100px;
+    border: none;
+    outline: none;
+    color: white;
+    height: 35px;
+    border-radius: 30px;
+    margin-top: 20px;
+    box-shadow: 0px 5px 15px 0px rgba(28, 0, 181) ;
+    cursor:url('../images/pointer.png'), auto;
+}
+
+.contact-left h3{
+    color: blue ;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.contact-right h3{
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.menu  button{
+    cursor:url('../images/pointer.png'), auto;
+}
+
+.nav-shortcut img{
+    vertical-align: middle;
+    margin-right: -20px;
+}
+nav {
+    width: 100%;
+    background-color: grey;
+    bottom: 0;
+    position: fixed;
+}
+nav ul{
+    float: left;
+}
+
+nav ul li{
+    float: left;
+    list-style: none;
+    position: relative;
+}
+nav ul li a{
+    display: inline-block;
+    font-family: sans-serif;
+    color: white;
+    font-size: 14px;
+    padding: 22px 14px;
+    text-decoration: none;
+    cursor:url('../images/pointer.png'), auto;
+}
+nav ul li ul {
+    display: none;
+    position: inherit;
+    background-color: grey;
+    padding: 0px;
+    border-radius: 4px 4px 4px 4px;
+}
+
+nav ul li ul a{
+   padding: -18px -14px;
+   border-radius: 1px;
+   cursor:url('../images/pointer.png'), auto;
+}
+
+nav ul li:hover ul{
+    display: block;
+}
+nav ul li ul a:hover{
+    background-color: lightgray;
+ }
+
+ footer{
+    background-color: transparent;
+    float: left;
+    width: 100%;
+    position: absolute;
+    bottom: 40px;
+ }

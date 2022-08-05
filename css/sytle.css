@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100%;
+    cursor:url('../images/vintage-cursor.png'), auto;
+}   
+
+img{
+    width: 45px;
+    height: 45px;
+    margin-inline-start: 10px;
+}
+p{
+    display: block;
+    margin-block-end: 5em;
+    margin-inline-start: 10px;
+    margin-inline-end: 0px;
+    font-size: x-small;
+    font-family: 'windows', sans-serif;
+}
+a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-size: 1.3em;
+    cursor:url('../images/pointer.png'), auto;
+}
+.desktop-shortcut{
+    text-align: center;
+    display: inline-block;
+}
+
+.desktop-shortcut img{
+    margin-inline-start: 10px;
+  
+}
+
+body{
+    background-color: RGB(1,130,129);
+}
+
+.nav-shortcut img{
+    vertical-align: middle;
+    margin-right: -20px;
+}
+nav {
+    width: 100%;
+    background-color: grey;
+    bottom: 0;
+    position: fixed;
+}
+nav ul{
+    float: left;
+}
+
+nav ul li{
+    float: left;
+    list-style: none;
+    position: relative;
+}
+nav ul li a{
+    display: inline-block;
+    font-family: sans-serif;
+    color: white;
+    font-size: 14px;
+    padding: 22px 14px;
+    text-decoration: none;
+    cursor:url('../images/pointer.png'), auto;
+}
+nav ul li ul {
+    display: none;
+    position: inherit;
+    background-color: grey;
+    padding: 0px;
+    border-radius: 4px 4px 4px 4px;
+}
+
+nav ul li ul a{
+   padding: -18px -14px;
+   border-radius: 1px;
+   cursor:url('../images/pointer.png'), auto;
+}
+
+nav ul li:hover ul{
+    display: block;
+}
+nav ul li ul a:hover{
+    background-color: lightgray;
+ }
+
+ footer{
+    background-color: transparent;
+    float: left;
+    width: 100%;
+    position: absolute;
+    bottom: 40px;
+ }
+
+ /* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+    .header,
+    .main-nav {
+      display: flex;
+    }
+    .header {
+      flex-direction: column;
+      align-items: space-evenly;
+      
+    }
+  
+  }
